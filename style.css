@@ -107,7 +107,8 @@ body, html {
 }
 
 .navRight{
-    padding-left: 15px;
+    padding-top: 15px;
+    padding-left: 0px;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -258,7 +259,7 @@ body, html {
 
 
 .scroll{
-    margin-top: 60px;
+    margin-top: 100px;
     width: 100%;
 }
 
@@ -312,12 +313,14 @@ img{
 }
 
 .bodyTags>*{
-    color: #F2F2F2;
+    letter-spacing: 0px;
+    color: #121212;
     margin-right: 0px;
     margin-left: 15px;
-    padding: 5px;
-    border: solid salmon;
-    border-width: 3px 8px;
+    padding: 4px;
+    border: solid;
+    border-color: salmon;
+    border-width: 2px 5px;
     /* border-radius: 100vmax; */
     background-color: salmon;
     flex-grow: 1;
@@ -339,6 +342,10 @@ img{
 
 @media only screen and (min-width: 1080px) {
 
+    .scroll{
+        margin-top: 60px;
+    }
+
     .navLeft{
         display: flex;
         flex-direction: row;
@@ -349,6 +356,7 @@ img{
     
     .navRight{
         padding-left: 15px;
+        padding-top: 0px;
         position: relative;
         float: right;
         width: 66.3%;
