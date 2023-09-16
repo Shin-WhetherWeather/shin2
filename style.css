@@ -23,7 +23,8 @@ body, html {
     margin: 0;
     padding: 0;
     font-size: 1.5vw;
-    background-color: #F2F2F2;
+    background-color: #dbdbdb;
+    transition: 500ms;
     color:#F2F2F2
   }
 
@@ -50,6 +51,14 @@ body, html {
     font-variation-settings: 'FILL' 1 ;
 }
 
+.rightIcons>*{
+    transition: 400ms;
+}
+
+.rightIcons>*:hover{
+    transform: scale(1.1);
+}
+
 .logoIcon{
     transition: 400ms;
     filter:saturate(0) brightness(0.5);
@@ -72,6 +81,7 @@ body, html {
     align-items: center;
     justify-content: center;
     margin-top: -3px;
+    transition: 400ms;
 }
 
 .rightIcons>*{
@@ -87,7 +97,7 @@ body, html {
 .navbar{
     font-size: 20px;
     color:#121212;
-    background-color: #F2F2F2;
+    background-color: #F2F2F2E0;
     padding: 15px;
     position: fixed;
     top:0;
@@ -146,11 +156,13 @@ body, html {
 }
 
 .navTitle>a:link, .navTitle>a:visited{
+    color: #121212;
     text-decoration: none;
 }
 
 .navTitle:hover{
     filter: drop-shadow(0 0 2px black);
+    transform: scale(1.03);
 }
 
 .gradient{
@@ -324,6 +336,18 @@ img{
     /* border-radius: 100vmax; */
     background-color: salmon;
     flex-grow: 1;
+}
+
+.imageWrapper{
+    overflow: hidden; 
+}
+
+.projectPhoto{
+    transition: 600ms;
+}
+
+.projectPhoto:hover{
+    transform: scale(1.05);
 }
 
 @media only screen and (min-width: 700px) {

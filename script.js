@@ -1,6 +1,8 @@
 tabs = document.querySelectorAll(".navTab");
 projects = document.querySelectorAll(".project");
 
+body = document.getElementById("body");
+
 timeoutList = [];
 
 function updateProjects(element){
@@ -54,12 +56,19 @@ function updateProjects(element){
 
 tabs.forEach(element => {
     element.addEventListener("click", function(e){
+        
+        
+
+
         updateProjects(element);
 
         tabs.forEach(tab=>{
             tab.classList.remove("selectedTab");
         })
         this.classList.add("selectedTab");
+
+        topFunction();
+
     })
 });
 
