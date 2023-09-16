@@ -33,6 +33,10 @@ body, html {
 }
 
 
+.project{
+    transition: 900ms;
+}
+
 
 
 
@@ -140,6 +144,10 @@ body, html {
     transition: 700ms;
 }
 
+.navTitle>a:link, .navTitle>a:visited{
+    text-decoration: none;
+}
+
 .navTitle:hover{
     filter: drop-shadow(0 0 2px black);
 }
@@ -156,14 +164,51 @@ body, html {
 .awardsOver{
     position: absolute;
     top:0;
-    right:0;
-    height: 100px;
-    width: 100px;
+    right: 0;
+
+    margin: 18px;
+    margin-top: 3px;
+
+    height: 21%;
+    width: 21%;
+    background: linear-gradient(-70deg, black 66%, #bbbbbb 66%, #bbbbbb 70%, black 70%, black 80%, #838383 80%, #535353 90%, black 90%);
+    background-size: 400% 100%;
+    background-position:-160%;
     
-    -webkit-mask-image: url(#mask);
-    mask-image: url(#mask);
+    /*background: -webkit-gradient(linear, left top, right top, color-stop(95%,rgba(255,0,0,1)), color-stop(96%,rgba(0,255,0,1)), color-stop(99%,rgba(0,0,255,1)), color-stop(100%,rgba(255,255,255,1)));*/
+    
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Shin-WhetherWeather/WhetherWeather/main/Icons/gDesign-01.png);
+    mask-image: url(https://raw.githubusercontent.com/Shin-WhetherWeather/WhetherWeather/main/Icons/gDesign-01.png);
     -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;    
+    
+    mask-repeat: no-repeat;  
+    mask-size: 100%;
+    mask-position: top right;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-repeat: no-repeat;  
+    -webkit-mask-size: 100%;
+    -webkit-mask-position: top right;
+    -webkit-mask-repeat: no-repeat;
+
+    transition: 1600ms;
+}
+
+
+.company{
+    position: absolute;
+    top:0;
+    left: 0;
+
+    margin: 20px;
+    margin-top: 18px;
+
+    height: 14%;
+    width: auto;
+}
+
+.awardsOver:hover{
+    background-position:-80%;  
 }
 
 
