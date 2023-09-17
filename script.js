@@ -107,17 +107,16 @@ function updateProjects(element){
 tabs.forEach(element => {
     element.addEventListener("click", function(e){
         
-        
-
-
-        updateProjects(element);
+        topFunction();
 
         tabs.forEach(tab=>{
             tab.classList.remove("selectedTab");
         })
         this.classList.add("selectedTab");
 
-        topFunction();
+        updateProjects(element);
+
+        
 
     })
 });
@@ -125,6 +124,11 @@ tabs.forEach(element => {
 
 window.onload = (event) =>{
     updateProjects(tabs[0]);
+
+    tabs.forEach(tab=>{
+        tab.classList.remove("selectedTab");
+    })
+    tabs[0].classList.add("selectedTab");
 }
 
 
