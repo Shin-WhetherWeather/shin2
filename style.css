@@ -124,6 +124,7 @@ body, html {
 }
 
 .navTab{
+    user-select: none;
     font-weight: 500;
     color:#F2F2F2;
     margin-right: 15px;
