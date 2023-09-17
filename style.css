@@ -286,6 +286,10 @@ img{
     font-weight: 300;
 }
 
+.bodyText>a:visited, .bodyText>a:link{
+    color: #f2f2f2;
+}
+
 .bodyTags{
     padding-left: 0;
 
