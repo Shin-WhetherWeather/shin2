@@ -38,7 +38,7 @@
 
             <div class="rightIcons">
 
-                <div class="navIcons">
+                <div class="navIcons" id="emailButton">
                     <span class="material-symbols-rounded">
                         mail
                     </span>
@@ -83,7 +83,101 @@
 
 
 
+
+
+
+
+
+
     <div class = "scroll">
+
+
+
+        <div id = "emailRow" class="row emailRow">
+
+            <div class="col-4 contactPadding">
+            </div>
+
+
+            <div class="col-8 contactForm">
+                <div class="bodyTitle">
+                    Send me an email!
+                </div>
+
+                <div class="closeButton" id="closeButton">
+                    <span class="material-symbols-rounded">
+                        close
+                    </span>
+                </div>
+
+                <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+
+                <input id = "inputEmail" type="email" name="subject" placeholder="Email" required/>
+                <br>
+                <div id="emailError"></div>
+                <textarea id = "inputText" name="text" placeholder="Message" required></textarea>
+                <div id="textError"></div>
+                <br>
+
+                <input type="hidden" name="access_token" value="pqrh2i9xg0xbn7751ux2dp73" />
+            
+            
+
+                <!-- set the reply-to address -->
+                <!-- <input type="text" name="reply_to"
+                            placeholder="Your Email" /> -->
+
+                <!-- to append extra fields, use the extra_ prefix.
+                    Entries will be appended to your message body. -->
+                <!-- <input type="text" name="extra_phone_number"
+                            placeholder="Phone Number" /> -->
+
+                <!-- to split your message into 160 chars
+                    for an sms gateway -->
+                <!-- <input type="hidden"
+                            name="sms_format" value="true" /> -->
+
+                            <div class="bodyTags formBottom">
+                                <div style="background-color: #FDD9C1; border-color: #FDD9C1;">
+                                    <input id="submit_form" type="submit" value="Send">
+                                </div>
+    
+                                    <div class="emailAdd" style="background-color: #C8CFE9; border-color: #C8CFE9;" >
+                                        shin.industrialdesign@gmail.com
+                                    </div>
+                                
+                            </div>
+            
+                            
+                
+            </form>
+                
+            <!-- optional, prevents the submit button from being pressed more than once -->
+
+            </div>
+
+
+
+            
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         <div class = "row project personal">
@@ -124,7 +218,7 @@
     
     
         <div class = "row project personal">
-            <div class="col-4 textBox">
+            <div class="col-8 textBox">
                 <div class="bodyTitle">
                     Earphones
                 </div>
@@ -145,7 +239,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-8">
+            <div class="col-4">
                 <div class="imageWrapper">
                     <img class = "projectPhoto" src = "photos/Earphones/Case2.gif">
                 </div>
@@ -231,7 +325,7 @@
     
 
 
-    
+    <script src="emailform.js"></script>
     <script src = 'script.js'></script>
     <script src = "navigation.js"></script>
 </body>
