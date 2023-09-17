@@ -444,7 +444,7 @@ textarea {
     }
 
     .contactForm{
-        margin-left: 30px;
+        margin-left: 19px;
     }
 
     .scroll{
@@ -546,3 +546,13 @@ textarea {
     display: none;
     transition: 400ms;
 }
+
+.contactPadding{
+    padding: 0px;
+    width: 34.2%
+}
+
+.footer {
+    width:100%;
+    background: linear-gradient(#F598A2, #F598A2 25%, #FDD9C1 25%, #FDD9C1 50%, #B8E1D2 50%, #B8E1D2 75%, #C8CFE9 75%, #C8CFE9 100%);
+  }
