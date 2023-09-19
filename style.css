@@ -203,7 +203,7 @@ padding-left: 0px;
 
 .awardsOver{
     position: absolute;
-    top:1%;
+    top:4%;
     right: 2%;
 
     height: 21%;
@@ -238,7 +238,7 @@ padding-left: 0px;
 
 .company{
     position: absolute;
-    top: 2.5%;
+    top: 6%;
     left: 3%;
 
     filter: brightness(0.8);
@@ -456,7 +456,24 @@ textarea {
     font-size: 2vw;
 }
 
+
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 700px) {
+
+    .company{
+        top:2.5%;
+    }
+
+    .awardsOver{
+        top:1%;
+    }
 
 
     .row.gallery>[class*="col-"]{
