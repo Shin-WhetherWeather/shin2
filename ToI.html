@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta property="og:title" content="Shin's Portfolio"/>
+    <title>Shin's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="icons/cloud.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en-uk">
+
+    <meta property="og:image" content="https://cdn.yournet.space/good-design.org/2023/6137/Image1.jpg"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="674"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.nath.co/src/jQuery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src = 'scripts/scroll.js'></script>
+</head>
+    
+<body id="body">
+
+
+
+
+
+
+    <div class = "navbar">
+        <div class="navLeft">
+            <div class="navTitle">
+                <a href="index.html">
+                    seejianshin
+                </a>
+            </div>
+
+            <div class="rightIcons">
+
+                <div class="navIcons" id="emailButton">
+                    <span class="material-symbols-rounded">
+                        mail
+                    </span>
+                </div>
+
+                <div>
+                    <a href="https://www.instagram.com/shin_designworks/" target="_blank" rel="noopener noreferrer" class = "logoIcon">
+                        <img src="Logos/Instagram_Glyph_Gradient.png" alt="Instagram" >
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.linkedin.com/in/seejianshin/" target="_blank" rel="noopener noreferrer" class = "logoIcon">
+                        <img src="Logos/LI-In-Bug.png" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="navRight">
+            <div onclick="window.location.href = 'index.html' " class="navTab2" style="background-color: #F598A2;">
+                <div>
+                    <span class="material-symbols-rounded">
+                        arrow_back
+                    </span>
+                </div>
+            </div>
+            <div class="navTab2 selectedTab" style="background-color: #FDD9C1;">
+                <div>
+                    ToI
+                </div>
+            </div>
+        </div>
+
+
+
+        
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class = "scroll">
+
+
+
+
+
+        <div id = "emailRow" class="row emailRow">
+
+            <div class="col-4 contactPadding">
+                <div class = "footer"></div>
+            </div>
+
+
+            <div class="col-8 contactForm">
+                <div class="bodyTitle">
+                    Send me an email!
+                </div>
+
+                <div class="closeButton" id="closeButton">
+                    <span class="material-symbols-rounded">
+                        close
+                    </span>
+                </div>
+
+                <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+
+                <input id = "inputEmail" type="email" name="subject" placeholder="Email" required/>
+                <br>
+                <div id="emailError"></div>
+                <textarea id = "inputText" name="text" placeholder="Message" required></textarea>
+                <div id="textError"></div>
+                <br>
+
+                <input type="hidden" name="access_token" value="pqrh2i9xg0xbn7751ux2dp73" />
+            
+            
+
+                <!-- set the reply-to address -->
+                <!-- <input type="text" name="reply_to"
+                            placeholder="Your Email" /> -->
+
+                <!-- to append extra fields, use the extra_ prefix.
+                    Entries will be appended to your message body. -->
+                <!-- <input type="text" name="extra_phone_number"
+                            placeholder="Phone Number" /> -->
+
+                <!-- to split your message into 160 chars
+                    for an sms gateway -->
+                <!-- <input type="hidden"
+                            name="sms_format" value="true" /> -->
+
+                            <div class="bodyTags formBottom">
+                                <div style="background-color: #FDD9C1; border-color: #FDD9C1;">
+                                    <input id="submit_form" type="submit" value="Send">
+                                </div>
+    
+                                    <div class="emailAdd" style="background-color: #C8CFE9; border-color: #C8CFE9;" >
+                                        shin.industrialdesign@gmail.com
+                                    </div>
+                                
+                            </div>
+            
+                            
+                
+            </form>
+                
+            <!-- optional, prevents the submit button from being pressed more than once -->
+
+            </div>
+
+
+
+            
+        </div>
+
+
+
+
+
+
+        <div class = "row hero">
+            <div class="col-4 pageTextBox">
+                <div class="bodyTitle">
+                    ToI 
+                    <br>
+                    Technology of Interactions
+                </div>
+                <div class="bodyDate">
+                    2022
+                </div>
+                <br>
+                <div class="bodyText">
+                    ToI is a series of home appliances investigating our relationships with data and technology: ToI want to keep us connected without the associated anxiety and emotional baggage. ToI requires minimal amounts of direct interactions with human users, adopting a non-interfering approach to inform us of the worlds we live in.
+                </div>
+                <br>
+                <div class="bodyTags">
+                    <div style="background-color: #C8CFE9; border-color: #C8CFE9;">
+                        Microcontrollers
+                    </div>
+                    <div style="background-color: #FDD9C1; border-color: #FDD9C1;">
+                        Woodworking
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="imageWrapper">
+                    <img class = "projectPhoto" src = "photos/ToI/ToI_Hero.jpg">
+                </div>
+                <a href="https://good-design.org/projects/toi-technology-of-interactions/">
+                    <div class="awardsOver"></div>
+                </a>
+            </div>
+        </div>
+
+
+        <div class = "row gallery">
+            <div class="col-4">
+                <img class = ""  style= "object-fit: cover;width: 100%;max-height: 100%;" src = "photos/ToI/bubbles2_4k.jpg">
+            </div>
+            <div class="col-4">
+                <img class = "" style= "object-fit: cover;width: 100%;max-height: 100%;" src = "photos/ToI/lamp3_4k.jpg">
+            </div>
+            <div class="col-4">
+                <img class = "" style= "object-fit: cover;width: 100%;max-height: 100%;" src = "photos/ToI/radio3_4k.jpg">
+            </div>
+        </div>
+
+
+        <div class = "row gallery">
+            <div class="col-6">
+                <img class = ""  style= "object-fit: cover;width: 100%;max-height: 100%;" src = "photos/ToI/radio2_4k.jpg">
+            </div>
+            <div class="col-6">
+                <img class = "" style= "object-fit: cover;width: 100%;max-height: 100%;" src = "photos/ToI/lamp2_4k.jpg">
+            </div>
+        </div>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <footer height="200px" class = 'footer footer2' >
+    </footer>
+
+    
+
+
+    <script src="scripts/emailform.js"></script>
+    <script src = 'scripts/script.js'></script>
+    <script src = "scripts/navigation.js"></script>
+</body>
+    
+
+</html>

@@ -6,12 +6,13 @@
     position: relative;
     float: left;
     padding: 15px;
-    padding-top: 0px;
+    padding-top: 15px;
     padding-bottom: 0px;
     padding-right: 15px;
     width:100%;
     display: grid;
     align-content: flex-start;
+    
   }
 
 body, html {
@@ -38,6 +39,17 @@ body, html {
     transition: 900ms;
 }
 
+.row.gallery>*{
+padding-left: 0px;
+}
+
+
+
+.row>[class*="col-"]{
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
 
 
 
@@ -124,7 +136,7 @@ body, html {
     margin: 0px;
 }
 
-.navTab{
+.navTab, .navTab2{
     user-select: none;
     font-weight: 500;
     color:#F2F2F2;
@@ -142,10 +154,20 @@ body, html {
     cursor: pointer;
 }
 
-.selectedTab, .navTab:hover{
+.selectedTab, .navTab:hover, .navTab2:hover{
     flex-grow: 3;
     filter:saturate(1);
 }
+
+
+
+.navTab2>*>.material-symbols-rounded{
+    vertical-align:middle;
+    font-size: 3.1vw;
+}
+
+
+
 
 .navRight>div:nth-last-child(1){
     margin-right: 0px;
@@ -237,6 +259,11 @@ body, html {
     display:none;
 }
 
+.pageTextBox{
+    background-color: #121212;
+    padding-bottom: 45px;
+}
+
 
 
 
@@ -247,8 +274,7 @@ body, html {
 
 .row{
     width: 100%;
-    padding: 0px;
-    padding-bottom: 15px;
+    
 }
 
 .row::after {
@@ -383,6 +409,7 @@ button, input[type="submit"], input[type="reset"] {
 textarea { 
     /* will prevent resizing horizontally */
     resize:vertical;
+    min-height: 60px;
  }
 
  .closeButton>*{
@@ -427,8 +454,28 @@ textarea {
 }
 
 @media only screen and (min-width: 700px) {
-    .navTab{
+
+
+    .row.gallery>[class*="col-"]{
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+
+    .row{
+        padding: 0px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 0px;
+        display:flex;
+    }
+
+
+    .navTab, .navTab2{
         font-size: 20px;
+    }
+    .navTab2>*>.material-symbols-rounded{
+        vertical-align:middle;
+        font-size: 22px;
     }
     .bodyTitle, .closeButton{
         padding-top: 0px;
@@ -449,6 +496,7 @@ textarea {
 }
 
 @media only screen and (min-width: 1080px) {
+
 
     .contactPadding{
         display: flex;
@@ -521,15 +569,14 @@ textarea {
     }
     .bodyText{
         font-size: 0.9vw;
-    
+    }
+    .bodyDate{
+        font-size: 1.3vw;
+        font-weight: 300;
+        line-height: 2.5;
     }
 
-    .row{
-        padding-bottom: 15px;
-        padding-left: 15px;
-        padding-right: 0px;
-        display:flex;
-    }
+
 
     .bodyTags{
         font-size: 0.9vw;
