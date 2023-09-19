@@ -129,9 +129,11 @@ body, html {
     font-weight: 500;
     color:#F2F2F2;
     margin-right: 15px;
+    font-size: 3.5vw;
     height:30px;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-grow: 1;
 
     filter:saturate(0);
@@ -425,6 +427,9 @@ textarea {
 }
 
 @media only screen and (min-width: 700px) {
+    .navTab{
+        font-size: 20px;
+    }
     .bodyTitle, .closeButton{
         padding-top: 0px;
         font-size: 2.9vw;
