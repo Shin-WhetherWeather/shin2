@@ -268,6 +268,10 @@ padding-left: 0px;
 }
 
 
+.bodyText.imageText{
+    color: #121212;
+}
+
 
 
 .scroll{
@@ -630,7 +634,7 @@ textarea {
     transition: 400ms;
 }
 
-.contactPadding{
+.col-4.contactPadding{
     padding: 0px;
     width: 34.2%
 }
