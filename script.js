@@ -19,6 +19,9 @@ closeButton.addEventListener("click", function(){
 
 
 email.addEventListener("click", function(){
+    topFunction();
+
+    
     for(let i = 0; i <timeoutList.length; i++){
         clearTimeout(timeoutList[i]);
     }
