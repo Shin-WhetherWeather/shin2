@@ -51,6 +51,9 @@ padding-left: 0px;
 
 }
 
+.row.project{
+    padding-left: 0px;
+}
 
 
 .navIcons{
@@ -470,6 +473,7 @@ textarea {
     }
 
 
+
     .navTab, .navTab2{
         font-size: 20px;
     }
@@ -496,6 +500,10 @@ textarea {
 }
 
 @media only screen and (min-width: 1080px) {
+
+    .row.project{
+        padding-left: 15px;
+    }
 
 
     .contactPadding{
