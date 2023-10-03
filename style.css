@@ -231,6 +231,15 @@ padding-left: 0px;
     transition: 1600ms;
 }
 
+.awardsOver2{
+    position: absolute;
+    top:20%;
+    right: 5%;
+
+    height: 15%;
+    width: 15%;
+}
+
 .awardsOver:hover{
     background-position:-80%;  
 }
