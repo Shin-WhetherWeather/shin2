@@ -238,6 +238,14 @@ padding-left: 0px;
 
     height: 15%;
     width: 15%;
+
+    transition: 600ms;
+    filter: brightness(0.9) saturate(0.9);
+}
+
+.awardsOver2:hover{
+    filter: brightness(1) saturate(1) drop-shadow(0 0 6px rgba(255,255,255,0.12));
+    transform: scale(1.02);
 }
 
 .awardsOver:hover{
@@ -387,7 +395,7 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 .projectPhoto:hover{
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 
 #inputEmail, #inputText{
