@@ -233,7 +233,7 @@ padding-left: 0px;
 
 .awardsOver2{
     position: absolute;
-    top:20%;
+    top:22.5%;
     right: 5%;
 
     height: 15%;
@@ -494,6 +494,10 @@ textarea {
 
     .awardsOver{
         top:1%;
+    }
+
+    .awardsOver2{
+        top:20%;
     }
 
 
